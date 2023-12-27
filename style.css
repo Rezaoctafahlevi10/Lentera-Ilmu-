@@ -1,0 +1,836 @@
+@import url('https://fonts.gooleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Global Tags*/
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FF5000;
+}
+span { 
+    font-size: 9rem;
+    color: #757575;
+}
+.h6 {
+    font-size: 1.1rem;
+    color: black;
+}
+
+/*navigation*/
+nav .img {
+    background-color: chocolate;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+} 
+nav img {
+    width: 220px;
+    height: 150px;
+    cursor: pointer;
+}
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a {
+    text-decoration: none;
+    color: burlywood;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+nav .navigation ul li a:hover {
+    color: #fdc938;
+}
+nav .search{
+    width: 200px;
+    float: left;
+    margin-left: 120px;
+}
+nav .srch{
+    font-family: 'Times New Roman';
+    width: 100px;
+    height: 50px;
+    background: #ffff;
+    border: 1px solid #000000 ;
+    margin-top: 13px auto;
+    color: rgb(0, 0, 0);
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.3s ease;
+}
+
+nav .btn{
+    width:100px ;
+    height: 50px;
+    background: #FF5000;
+    border: 2px solid #FF5000; 
+    margin-top: 13px auto;
+    color: #ffff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+nav .btn:hover{
+    outline: none; 
+    color: #FF5000;
+    background:#ffff;
+}
+nav .srch.focus{
+    outline: none;
+    cursor: pointer;
+}
+/*Beranda*/
+#BERANDA {
+    background-color:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7));
+    background-image: url(logo.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 0 -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px; 
+    font-family: 'Times New Roman';
+    background-attachment: fixed;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+
+}
+#BERANDA h2{
+    color: #ffff ;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+}
+#BERANDA p{
+    color: #ffff;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+}
+#BERANDA .randa{
+    margin-top: 30px;
+}
+#BERANDA a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding:13px 35px;
+    background-color: #ffff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#BERANDA a.blue {
+    color: #ffff;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}
+#BERANDA a.blue:hover {
+    color: rgb(21, 21, 100);
+    background: #ffff;
+}
+#BERANDA a.yellow {
+    color: #ffff;
+    background: #fdc938;
+    transition: 0.3s ease;
+}
+#BERANDA a.yellow:hover {
+    color: #fdc938;
+    background: #ffff;
+}
+/*Daftar Layanan*/
+#DaftarLayanan h1{
+    padding: 5px 0;
+    background-color:#FF5000;
+    color:#ffff;
+}
+#DaftarLayanan{
+    padding: 5vw 8vw 0 8vw;
+    text-align: left;
+    background-color:#ffff;
+}
+#DaftarLayanan .fea-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    text-decoration: none;
+
+}
+#DaftarLayanan .fea-box {
+    background-color: #f9f9f9 ;
+    text-align: start;
+    text-decoration: none;
+
+}
+#DaftarLayanan .fea-box i {
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+    text-decoration: none;
+    
+}
+#DaftarLayanan .h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+    text-decoration: none;
+    list-style: none;
+}
+#DaftarLayanan .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+#DaftarLayanan .fea-box {
+    background-color: #f9f9f9 ;
+    text-align: start;
+}
+#DaftarLayanan .fea-box i {
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+    
+}
+#DaftarLayanan .fea-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+#DaftarLayanan .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+#kontak {
+    /* background: #D0CAB2;
+    padding: 50px 0px 50px 0px; */
+    margin-top: 100px;
+}
+.footer{
+    background: #D0CAB2;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    position: relative;
+    display: flex; 
+    flex-wrap: wrap;
+    margin: auto;
+    overflow-y: hidden;
+    z-index: -1;
+
+  
+}
+.footer-pilihan {
+    width: 20%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+h3{
+    font-family: 'Times New Roman';
+    font-weight: 800%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px;
+}
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    background-color: black;
+    color: #ffff;
+    border-top-width: 50px;
+
+}
+#profil-BERANDA {
+background-color:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7));
+background-image: url(logo1.jpg);
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: 0 -50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding-top: 40px; 
+font-family: 'Times New Roman';
+background-attachment: fixed;
+box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+}
+#profil-BERANDA h1{
+    color: #ffff ;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+}
+
+#profil-perpus .sejarah h1 {
+    color: black;
+    text-align: 100% left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 1vw 5vw 0 8vw; 
+    background-color:#ffff;
+    padding: 5px 0;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+
+}
+#profil-perpus .sejarah img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#profil-perpus .sejarah p {
+    color: black;
+    text-align: 100% left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 1vw 5vw 0 8vw; 
+    background-color:#ffff;
+    padding: 5px 0;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#profil-perpus .sejarah img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#profil-perpus .visi h1 {
+    color: black;
+    text-align: 100% left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 1vw 5vw 0 8vw; 
+    background-color:#ffff;
+    padding: 5px 0;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+#profil-perpus .visi p {
+    color: black;
+    text-align: 100% left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 1vw 5vw 0 8vw; 
+    background-color:#ffff;
+    padding: 5px 0;
+    margin-top: 10px;
+    margin-left: 85px;
+}
+#profil-perpus .misi h1 {
+    color: black;
+    text-align: 100% left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 1vw 5vw 0 8vw; 
+    background-color:#ffff;
+    padding: 5px 0;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+#profil-perpus .misi p {
+    color: black;
+    text-align: 100% left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 1vw 5vw 0 8vw; 
+    background-color:#ffff;
+    padding: 5px 0;
+    margin-top: 10px;
+    margin-left: 85px;
+}
+#profil-perpus .motto h1 {
+    color: black;
+    text-align: 100% left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 1vw 5vw 0 8vw; 
+    background-color:#ffff;
+    padding: 5px 0;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+#profil-perpus .motto p {
+    color: black;
+    text-align: 100% left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 1vw 5vw 0 8vw; 
+    background-color:#ffff;
+    padding: 5px 0;
+    margin-top: 10px;
+    margin-left: 85px;
+    margin-bottom: 30px;
+}
+#foto {
+   padding: 8vw 8vw 0 8vw;
+   text-align: center;
+}
+#foto h1{
+    text-align: center;
+    font-size: 30px;
+}
+#foto p{
+    text-align: center;
+    font-size: 15px;
+}
+
+#foto .exports-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+#foto .exports-box .pendiriperpus {
+    padding: 30px 10px;
+    background: burlywood;
+}
+#foto .pendiriperpus img{
+    background-size: cover;
+    border-radius: 100px;
+    margin-left:auto;margin-right:auto;display:block;width:150px;height:150px;
+    margin-bottom: 10px;
+}
+
+#foto .exports-box .pendiriperpus h1 {
+    text-align: center;
+    font-size: 25px;
+    color: orangered;
+}
+#foto .exports-box .pendiriperpus .text {
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+}
+.pendiriperpus p {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+/* formulir kontak */
+.kontakus{
+    margin-top: 30px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+
+  }
+.kontakus h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+  }
+  
+  .kontakus .input_field{
+    margin-bottom: 10px;
+  }
+  
+  .kontakus .input_field input[type="text"],
+  .kontakus textarea{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .kontakus textarea{
+    height: 80px;
+    resize: none;
+  }
+  
+  .kontakus .btn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: #fece0c;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .kontakus #error_message{
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #fe8b8e;
+      text-align: center;
+      font-size: 14px;
+      transition: all 0.5s ease;
+  }
+  
+/* Login */
+.bg-img{
+    background: url(logo1.jpg) ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.bg-img:after{
+    position: absolute;
+    content: '';
+    top : 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.content{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index:999;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(225, 225, 225, 0);
+    background-color: #FF5000 ;
+    text-shadow: -1px 4px 28px 0px rgb(0, 0, 0, 0.75);
+    /* width: 100%; */
+    /* background: #fff; */
+    /* padding: 25px; */
+    /* border-radius: 5px; */
+}
+.content header{
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+/* .bg-img .content .yoyo i {
+     font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+    text-decoration: none;
+} */
+.yoyo {
+    position:relative ;
+    height: 45px;
+    width: 100%;
+    /* margin-bottom: 30px; */
+    display: flex;
+    background: rgba(225, 225, 225, 0.94);
+}
+.yoyo span{
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+}
+
+.yoyo input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.show{
+   position: absolute; 
+   right: 13px;
+   font-size: 13px;
+   font-weight: 700;
+   color: #222;
+   cursor: pointer;
+   display: none;
+   font-family: 'Times New Roman', Times, serif;
+}
+.password:valid ~ .show{
+    display: block;
+
+}
+.space{
+    margin-top: 16px;    
+}
+.pass{
+    text-align: left;
+    margin: 10px 0;
+}
+.pass a {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.pass :hover a {
+    text-decoration: underline;
+} 
+input[type="Submit"]{
+    background-color: red;
+    border: rgb(40, 20, 111);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+input[type="Submit"]:hover{
+    background: rgb(21, 21, 100);
+}
+.new h5{
+    margin-top: 10px;
+}
+.linklogin{
+    display: flex;
+    cursor: pointer;
+    color: white;
+    margin: 0 0 20px 0 ;
+}
+.facebook, .instragram{
+    width: 100%;
+    height: 50px;
+    line-height: 45px;
+    margin-top: 10px;
+}
+.facebook{
+    background: #4267B2;
+    border: 1px solid #3e61a8;  
+}
+.instragram{
+    background: #e1306c;
+    border: 1px solid #e1306c;  
+}
+.new h5{
+    margin-top: 10px;
+}
+.daftarakun {
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.daftarakun a{
+    color: #000000;
+    text-decoration: none;
+}
+.daftar a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* daftar akun */
+.Gambarku{
+ background-image: url(logo1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.Gambarku:after{
+    position: absolute;
+    content: '';
+    top : 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.Halamanawal{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index:999;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(225, 225, 225, 0);
+    background-color: #FF5000 ;
+    text-shadow: -1px 4px 28px 0px rgb(0, 0, 0, 0.75);
+}
+.Halamanawal   header{
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#daftarakun .input_yuk i{
+    margin-bottom: 10px; 
+    color: blue; 
+}
+#Dafar{
+    margin: 40px auto 20px;
+    width: 100%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid ;
+    cursor: pointer;
+    background-color: red;
+    color: black;
+    font-size: 16px;
+}
+.Gambarku .Halamanawal .tombol input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: red;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+.Gambarku #gagal{
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+.input_yuk{
+    margin-bottom: 10px;
+  }
+.input_yuk input[type="text"]{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .input_yuk input[type="password"]{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+.show{
+   position: absolute; 
+   right: 13px;
+   font-size: 13px;
+   font-weight: 700;
+   color: #222;
+   cursor: pointer;
+   display: none;
+   font-family: 'Times New Roman', Times, serif;
+}
+#passwordbaru:valid{
+    display: block;
+}
+
+
+/* katagori buku */
+#kategori h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+#kategorinew h2{
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fdc938;
+    margin-bottom: 20px;
+    height: 50%;
+    width: 60%;
+    margin-left: 50px;
+}
+.kategori1{
+    background-color: darkgrey;
+    width: 80%;
+    height: 100%;
+    margin: 20px 9vh 50px;
+    /* margin-left: 250px;
+    margin-right: 200px; */
+    padding: 50px;
+    display: block;
+    border: #000000;
+    margin-top: 20px;
+}
+.kategori1 .kategori2 button{
+    border-bottom: yellow;
+    bottom: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    background: #22a4cf;
+    color: white;
+    border: white 3px solid;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 10px;
+}
+.kategori1 .kategori3 button{
+    border-bottom: yellow;
+    bottom: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    background: #22a4cf;
+    color: white;
+    border: white 3px solid;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 10px;
+}
+.Gambarkuu img{
+    width: 100%;
+}
+   

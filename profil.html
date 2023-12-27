@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perpustakaan Lentera Ilmu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <img src="imageslogo.jpeg" width="200" height="200">
+        <div class="navigation">
+            <ul>
+                <li><a c href="BaitulAtfhal.html">BERANDA</a></li>
+                <li><a href="katagori.html">KATAGORI</a></li>
+                <li><a href="profil.html">PROFIL</a></li>
+                <li><a href="kontak.html">KONTAK</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Masukan yang Anda Cari">
+            <a href="#"><button class="btn">Search</button></a>
+        
+    </nav>
+
+    <!--BERANDA-->
+    <section id="profil-BERANDA">
+             <h1>Profil dari Perpustakaan Lentera Ilmu</h1>
+        </div>
+    </section>
+
+   <!--profil-->
+    <section id="profil-perpus">
+        <div class="sejarah">
+                <h1> Tentang Perpustakan Lentera Ilmu</h1>
+                <img src="perpus.jfif" width="50%" height="50%" >
+                <p>
+                    Perpustakaan Lentera Ilmu dibentuk pada tanggal 20 Februari 2020 dan terletak di 
+                    Desa Kedungpandan RT 04 RW 02 Kecamatan Jabon Kabupaten Sidoarjo. Perpustakaan Lentera Ilmu terbuka untuk semua kalangan masyarakat.
+                    Perpustakaan Lentera Ilmu didirikan oleh Reza Octa Fahlevi dan Rigel Roub Bahari. Perpustakaan Lentera Ilmu ini diharapkan agar menjadi sumber pengetahuan bagi semua masyarakat indonesia. Perpustakaan Lentera Ilmu terus berbenah untuk mengoptimalkan perannya dalam mendukung kegiatan meningkatkan dan mengembangkan literasi terhadap semua masyarakat Indoensia.
+                </p>
+            </div>
+
+    <div class="visi">
+        <h1> <b> Visi </b> </h1>
+        <p> "Mengoptimalkan perpustakaan sebagai wadah pusat informasi dan literasi"</p>
+    </div>
+    <div class="misi">
+        <h1> <b> Misi </b> </h1>
+        <p class="Cerita">1. Menjadikan perpustakaan sebagai pusat kegiatan belajar</p>
+        <p class="Cerita">2. Menjadikan perpustakaan pusat pengembangan prestasi keilmuan melalui literasi</p>
+        <p class="Cerita">3. Menjadikan perpustakaan pusat pengembangan minat dan bahakat</p>
+        <p class="Cerita">4. Menjadikan perpustakaan pusat sumber informasi</p>
+    </div>
+    <script>
+        var Cerita= document.getElementsByClassName("Cerita") ;
+        console.log(Cerita)
+    </script>     
+    <div class="motto">
+        <h1>Motto</h1>
+        <p>"Something very magical happens when you READ A GOOD BOOK"</p>
+    </div>
+    <!--Profil Pendiri-->
+    <section id="foto">
+        <h1>Pendiri Perpustakaan Lentera Ilmu</h1>
+        <p>Something very magical happens when you READ A GOOD BOOK</p>
+        <div class="exports-box"></div>
+
+            <div class="pendiriperpus">
+                <img clas="slidefoto" src="Reza.jpeg" width="150px" height="150px" > 
+                <img class="slidefoto" src="Reza1.jpeg" width="150px" height="150px">
+                <img class="slidefoto" src="Reza2.jpeg" width="150px" height="150px">
+                <h1>Reza Octa Fahlevi</h1>
+                <div class="text">Universitas Jember , Prodi Informatika | Mahasiswa</div>
+                <p>"When the pain of an obstacle is too great, challenge yourself to be stronger"</p>
+                </div>            
+        </div>
+            <div class="pendiriperpus">
+                <img src="Rigel.jpeg" width="150px" height="150px" > 
+                <h1>Rigel Roub Bahari</h1>
+                <div class="text">Universitas Jember , Prodi Informatika | Mahasiswa</div>
+                <p> Sukses itu berawal dari setiap tantangan, bukan dari zona nyaman </p>
+                </div>
+        </div>
+    </section>
+
+        <div id="kontak">
+            <div class="wrapper">
+                <div class="footer">
+                    <div class="footer-section">
+                        <h3> Perpustakaan Lentera Ilmu</h3>
+                        <p>Something very magical happens when you READ A GOOD BOOK</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>KONTAK</h3>
+                        <h4>Alamat :</h4>
+                        <p>Desa Kedung Pandan Kecamatan Jabon </p>
+                        <p>Sidoarjo, Jawa Timur, Indonesia</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3> Media Sosial</h3>
+                        <p> <b>Instragram : </b>Perpustakan_LenteraIlmu </p>
+                        <p> <b>Youtube    : </b>Perpustakan Lentera Ilmu </p>
+                        <p> <b>Facebook   : </b>Perpustakan_Lentera Ilmu </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--copyright-->
+        <div id="copyright">
+            <div class="coppyright">
+                <div class="wrapper">
+                   <b>Copyright &copy; 2021 </b>. <b>| Perpustakaan Lentera Ilmu</b>
+                </div>
+            </div>
+        </div>
+        <script>
+            var index = 0;
+            change();
+            function change(){
+                var x = document.getElementsByClassName("slidefoto");
+
+                for (var i =0; i <x.length ;i++){
+                    x[i].style.display = "none";
+                }
+                index++;
+
+                if (index >x.length){
+                    index =1 ;
+                }
+                x[index-1].style.display='display'
+                setTimeout(change,2000)
+            }
+        </script>
+</body>
+</html>

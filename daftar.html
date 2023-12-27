@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+</head>
+<body>
+  <div class="Gambarku">
+    <div id="gagal"></div>
+    <div class="Halamanawal">
+        <header> Daftar Akun</header>
+        <form action="" id="daftarakun" onsubmit = "return validnew();">
+          <div class="input_yuk">
+              <i class="fas fa-user fa-2x "></i>
+              <input type="text" placeholder="Nama" id="nama">
+          </div>
+          <div class="input_yuk">
+            <i class="fas fa-envelope-square fa-2x"></i>
+              <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class="input_yuk">
+              <i class="fas fa-lock fa-2x"></i>
+              <input type="password" placeholder="Password" id="passwordbaru">
+              <span class="show fa-xs">Lihat</span>
+          </div>
+          <button type="submit" id="Dafar">Daftar</button>
+
+          <!-- <div class="tombol"> -->
+              <!-- <input type="submit"> -->
+          </div>
+        </form>
+    </div>
+</div>
+    <script>
+      function validnew(){
+  var name = document.getElementById("nama").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("passwordbaru").value;
+  
+  const submit = document.getElementById('Dafar')
+  submit.onclick = function(){
+  document.body.style.backgroundColor="green";
+} 
+  gagal.style.padding = "10px";
+  var text;
+  if(nama.length < 5){
+    text = "Tolong Nama Anda Tidak Sesuai";
+    error_message.innerHTML = text;
+    alert('Ada kesalahan dalam penulisan')
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Tolong masukkan email anda yang benar";
+    alert('Ada kesalahan dalam penulisan')
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(password <= 20){
+    text = "Pesan anda terlalu singkat";
+    alert('Ada kesalahan dalam penulisan')
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Hore berhasil!");
+  return true;
+}
+
+
+    </script>
+</body>
+</html>

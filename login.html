@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+    <div class="bg-img">
+        <div class="content">
+            <header>Login User</header>
+            <form action="#">
+                <div class="yoyo">
+                    <span class="fas fa-user fa-xs"></span>
+                    <input type="text" required placeholder="Email atau Phone">
+                </div>
+                <div class="yoyo space">
+                    <span class="fas fa-lock fa-xs"></span>
+                    <input type="password" class="password" required placeholder="Password">
+                    <span class="show fa-xs">Lihat</span>
+                </div>
+                <div class="pass">
+                    <a href="#">Lupa Password?</a>
+                </div>
+                <div class="yoyo">
+                    <input type="Submit" value="LOGIN">  
+                  </div>
+                <div class="new">
+                    <h5>Atau Login dengan</h5>  
+                </div>
+
+                  <div class="linklogin">
+                        <div class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="instragram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                  <div class="daftarakun">Tidak Punya Akun?
+                    <a href="daftar.html">Daftar Sekarang</a>
+                  </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const pass_field = document.querySelector('.password');
+        const show_btn= document.querySelector('.password');
+        show_btn.addEventListener('click',function(){
+            if(pass_field.type=="password"){
+                pass_field.type="text";
+                show_btn.style.color ="#222";
+                show_btn.textContent = "HIDE";
+            }else{
+                pass_field.type="password";
+                show_btn.style.color ="#red";
+                show_btn.textContent = "SHOW";
+            }
+            });
+    </script>
+   
+</body>
+</html>
